@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99F09650"
+    tools:context=".ModeOfGame">
+
+    <Button
+        android:id="@+id/AI"
+        android:layout_width="350sp"
+        android:layout_height="100sp"
+        android:layout_marginTop="160dp"
+        android:text="🖥️ You vs AI"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Friend"
+        android:layout_width="350sp"
+        android:layout_height="100sp"
+
+        android:text="🧑🏻‍🤝‍🧑🏻 You vs Friend"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AI" />
+
+    <Button
+        android:id="@+id/Number"
+        android:layout_width="350sp"
+        android:layout_height="100sp"
+        android:layout_marginBottom="196dp"
+        android:text="🔢 Numbers Mode"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/TitleGoM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D4F1B5"
+        android:text=" Please select Mode of Game "
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/AI"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

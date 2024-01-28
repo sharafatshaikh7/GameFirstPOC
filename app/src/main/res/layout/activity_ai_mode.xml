@@ -5,12 +5,31 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="bottom"
-
-    tools:context=".mainPage">
+    tools:context=".FriendMode">
 
     <com.andrognito.patternlockview.PatternLockView
-        android:id="@+id/pattern"
+        android:id="@+id/FriendPattern"
+        android:layout_width="354dp"
+        android:layout_height="297dp"
+        app:aspectRatio="square"
+        app:aspectRatioEnabled="true"
+        app:correctStateColor="@color/teal_700"
+        app:dotAnimationDuration="200"
+        app:dotCount="3"
+        app:dotNormalSize="20dp"
+        app:dotSelectedSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/TryPattern"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:normalStateColor="@color/teal_200"
+        app:pathEndAnimationDuration="100"
+        app:pathWidth="10dp"
+        app:wrongStateColor="@color/pomegranate" />
+
+    <com.andrognito.patternlockview.PatternLockView
+        android:id="@+id/TryPattern"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:aspectRatio="square"
@@ -49,33 +68,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="118dp"
-        android:layout_height="24dp"
-        android:text="Pattern Code"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/PatternCode"
-        app:layout_constraintStart_toStartOf="@+id/PatternCode"
-        app:layout_constraintTop_toTopOf="@+id/PatternCode" />
-
-    <TextView
-        android:id="@+id/PatternCode"
-        android:layout_width="411dp"
-        android:layout_height="142dp"
-        android:backgroundTintMode="src_in"
-        android:gravity="center"
-        android:shadowColor="#2BEDDB"
-        android:text=""
-        android:textColor="#43DD49"
-        android:textSize="60sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/pattern"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.752" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
