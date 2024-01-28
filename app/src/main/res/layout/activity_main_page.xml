@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".mainPage">
+
+    <com.andrognito.patternlockview.PatternLockView
+        android:id="@+id/pattern"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:aspectRatio="square"
+        app:aspectRatioEnabled="true"
+        app:correctStateColor="@color/primary"
+        app:dotAnimationDuration="200"
+        app:dotCount="4"
+        app:dotNormalSize="12dp"
+        app:dotSelectedSize="24dp"
+        app:normalStateColor="@color/white"
+        app:pathEndAnimationDuration="100"
+        app:pathWidth="4dp"
+        app:wrongStateColor="@color/pomegranate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
